@@ -4,34 +4,34 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.planning-strategy {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.planning-strategy img {
   width: 100%;
 }
-.aaa .more_inf {
+.planning-strategy .planning-strategy__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.planning-strategy { text-align: center;
 }
 }
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.adding-task__name {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.adding-task__form {
   display: flex;
 }
 ul {
@@ -127,7 +127,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul.completed-tasks label {
   text-decoration: line-through
   color: #888;
 }
