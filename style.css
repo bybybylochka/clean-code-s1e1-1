@@ -18,8 +18,9 @@ body {
 }
 
 @media (max-width:768px) {
-.planning-strategy { text-align: center;
-}
+  .planning-strategy {
+    text-align: center;
+  }
 }
 .main {
   display: block;
