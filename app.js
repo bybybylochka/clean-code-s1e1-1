@@ -41,9 +41,9 @@ var createNewTaskElement=function(taskString){
     editInput.className="adding-task__name";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="incomplete-tasks__edit";
+    editButton.className="incomplete-tasks__edit edit";
 
-    deleteButton.className="incomplete-tasks__delete";
+    deleteButton.className="incomplete-tasks__delete delete";
     deleteButtonImg.src="./remove.svg";
     deleteButton.appendChild(deleteButtonImg);
 
@@ -84,8 +84,8 @@ var editTask=function(){
 
     var editInput=listItem.querySelector("input[type=text]");
     var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".incomplete-tasks__edit");
-    var containsClass=listItem.classList.contains("incomplete-tasks__task_changing");
+    var editBtn=listItem.querySelector(".edit");
+    var containsClass=listItem.classList.contains("incomplete-tasks__task");
     //If class of the parent is .incomplete-tasks__task_changing
     if(containsClass){
 
@@ -99,7 +99,7 @@ var editTask=function(){
     }
 
     //toggle .incomplete-tasks__task_changing on the parent.
-    listItem.classList.toggle("incomplete-tasks__task_changing");
+    listItem.classList.toggle("incomplete-tasks__task");
 };
 
 
